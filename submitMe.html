@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 9</title>
+    <link rel="stylesheet" href="./style.css">
+  </head> 
+  <body>
+      <style>
+          p{
+              font-weight: 800;
+              font-style: italic;
+              text-transform: capitalize;
+              color: firebrick;
+              font-size: 50px;
+          }
+      </style>
+<form action="./hello.html" method="get" id="myLogin">
+  <label for="userName">User Name</label>
+  <input required type="text" id="userName" name="userName" placeholder="Enter username">
+  <span id="validateUserName"></span>
+
+  <label for="passWord">Password</label>
+  <input required type="password" id="passWord" name="passWord" placeholder="Enter password">
+  <span id="validateUserPass"></span>
+
+
+  <input id="mySubmit" type="submit" >
+  <p  style="font-size:15px"id="localBtn">login With Local Storage</p> 
+</form>
+
+<script src="./login.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+* {
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+}
+div,
+button,
+#tip,
+a,
+form {
+  border: 2px solid #f5f5f5;
+  box-shadow: 2px 3px 7px rebeccapurple, 2px -3px 7px 8px #f5f5f5;
+  padding: 3px;
+}
+button,
+a {
+  width: 200px;
+  padding: 20px;
+}
+input {
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  border: none;
+}
+form {
+  width: 30%;
+  margin: 50px auto;
+  padding: 20px;
+}
+form input:not(:nth-of-type(n + 5)),
+form span:not(:nth-of-type(n + 5)) {
+  display: block;
+  margin-bottom: 10px;
+}
+form input,
+label {
+  color: darkorchid;
+}
+label::after {
+  content: "  :";
+}
+#countDown {
+  padding: 30px;
+}
+#countDown span {
+  width: 100px;
+  height: 50px;
+  border: 3px solid greenyellow;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+}
+#countDown span::after {
+  display: block;
+  content: attr(id);
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+#countDown span::before {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 40px;
+  background-color: greenyellow;
+  left: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 3px;
+  text-align: center;
+  background-color: var(--dropContent);
+}
+li:hover,
+div:hover p:hover {
+  background-color: var(--dropDown);
+}
+
+#menus {
+  border: none;
+  margin-top: 30px;
+  box-shadow: none;
+}
+#menus > div {
+  width: 100%;
+  font-size: 20px;
+  box-shadow: none;
+}
+#dropDown p {
+}
+#header {
+  background-color: var(--dropDown);
+  /* background-color: aquamarine; */
+}
+
+#dropContent {
+  display: none;
+}
+
+#menus #dropDown:hover > #dropContent,
+#menus #drop:hover > #dropContent {
+  display: block;
+}
+
+li:hover {
+  background-color: blue;
+}
+
+.borderEffect {
+  border: solid 1px blue;
+}
+
+#play {
+  width: 100px;
+  background-color: plum;
+  transition: width 3s ease-in-out;
+  margin-bottom: 30px;
+}
+#gallery {
+  margin: 30px 20px;
+  padding: 10px;
+  text-align: center;
+}
+#gallery > div {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  color: transparent;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+#stars {
+  text-align: center;
+}
+#stars i {
+  font-size: 30px;
+  color: rgba(221, 215, 215, 0.952);
+}
+#stars i:hover {
+  color: goldenrod;
+  transition: color 1s ease-in-out;
+}
+#stars .myStar {
+  color: goldenrod;
+}
+#slider {
+  margin: 30px auto;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  background-image: none;
+  background-size: cover;
+  background-position: center top;
+  padding: 5px;
+
+}
+#slider > * {
+  padding:5px;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+#slider span {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  box-shadow: 3px 3px 3px black,-3px -3px 3px black;
+  margin-left: 5px;
+  
+}
+#slider span:last-of-type {
+  right: 0px;
+  margin-right: 5px;
+  
+}
+
+#slider p{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  bottom: 1%;
+}

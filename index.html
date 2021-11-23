@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 9</title>
+  <link rel="stylesheet" href="./style.css">
+  </head> 
+  <body>
+    <form action="./submitMe.html" method="get" id="myForm">
+          <label for="userName">User Name</label>
+          <input required type="text" id="userName" name="userName" placeholder="Enter username">
+          <span id="validateUserName"></span>
+
+          <label for="passWord">Password</label>
+          <input required type="password" id="passWord" name="passWord" placeholder="Enter password">
+          <span id="validateUserPass"></span>
+
+          <label for="myEmail">Email</label>
+          <input required type="email" id="myEmail" name="email" placeholder="Enter email">
+          <span id="validateUserEmail"></span>
+            
+          <label for="saveMe">remeber me</label>
+          <input id="saveMe" type="checkbox">
+
+          <input id="mySubmit" type="submit"> 
+      </form>
+
+    
+     <div >
+       <p>students data </p>
+       <p>yes json can hold null and boolean , but not undefined</p>
+       <p>
+         json : use objects ,easy to read ,have arrays
+         xml: use tags ,xml parsed only using xml parser
+       </p>
+      <ol id="students">
+
+      </ol>
+     </div>
+     <div id="api">
+      <p id="fn"></p>
+      <p id="ln"></p>
+      <img id="avatar" src="" alt="">
+     </div>
+
+     <div id="api">
+       <label for="">enter id </label>
+       <input type="text" name="" id="userId" placeholder="Enter id to search for">
+      <p id="fnUser"></p>
+      <p id="lnUser"></p>
+      <img id="avatarUser" src="" alt="">
+     </div> 
+     <div>
+       <p>names:</p>
+      <select id="names" class="names" style="font-size: 15px; display: inline">
+        
+      </select>
+     </div>
+    <script src="./be.js"></script>
+    <script src="data.js"></script>
+    <script src="test.js"></script>
+
+  </body>
+</html>
